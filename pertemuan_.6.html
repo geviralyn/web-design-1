@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+   <style>
+    .container{
+    width: 100%;
+    height: 90px;
+    background-color: red;
+    text-align: center;
+    font-size: 50px;
+} 
+ 
+    .container2{
+        width: 100%;
+        height: 90%;
+        background-color: aqua;
+        display: grid;
+        grid-template-areas: "konten1 konten2 konten3 konten4";
+    }
+
+    .isi1,.isi2,.isi3,.isi4{
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .container2 .isi1{
+        grid-area: konten3;
+    }
+
+    .container2 .isi2{
+        grid-area: konten1;
+    }
+
+    .container2 .isi3{
+        grid-area: konten4;
+    }
+
+    .container2 .isi4{
+        grid-area: konten2;
+    }
+
+    .container3{
+        width: 100%;
+        height: 90%;
+        background-color: bisque;
+        display: grid;
+        grid-template-areas: "konten1 konten2 konten3" 
+                             "konten4 konten5 konten6"
+                            ;
+
+        gap: 20px;
+    }
+
+    .satu,.dua,.tiga,.lima,.enam{
+        border: 1px solid black;
+        padding: 10px;
+        /* margin: 10px; */
+        text-align: center;
+        display: grid;
+        align-items: center;
+    }
+    
+    .satu{
+        grid-row-end: span 2;
+    }
+
+    .container2 .satu{
+        grid-area: konten1;
+    }
+
+    .container2 .dua{
+        grid-area: konten2;
+    }
+
+    .container2 .tiga{
+        grid-area: konten3;
+    }
+
+
+
+    .container2 .lima{
+        grid-area: konten5;
+    }
+
+    .container2 .enam{
+        grid-area: konten6;
+    }
+</style> 
+</head>
+
+ 
+
+<body>
+    <div class="container">
+         menu
+    </div>
+
+    <div class="container2">
+        <div class="isi1">
+            tch1
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perspiciatis nostrum, 
+            id fugiat ut ex obcaecati sint eos voluptate corrupti, 
+            deserunt officia quis consectetur, non quidem! Praesentium repudiandae placeat animi.
+        </div>
+
+        <div class="isi2">
+            yyyy2
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perspiciatis nostrum, 
+            id fugiat ut ex obcaecati sint eos voluptate corrupti, 
+            deserunt officia quis consectetur, non quidem! Praesentium repudiandae placeat animi.
+        </div>
+
+        <div class="isi3">
+            hafho3
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perspiciatis nostrum, 
+            id fugiat ut ex obcaecati sint eos voluptate corrupti, 
+            deserunt officia quis consectetur, non quidem! Praesentium repudiandae placeat animi.
+        </div>
+
+        <div class="isi4">
+            ajbgfja4
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perspiciatis nostrum, 
+            id fugiat ut ex obcaecati sint eos voluptate corrupti, 
+            deserunt officia quis consectetur, non quidem! Praesentium repudiandae placeat animi.
+        </div>
+    </div>
+
+    <div class="container3">
+        <div class="satu">
+            ini gabungan 2 kolom <br>
+           <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perspiciatis nostrum, 
+            id fugiat ut ex obcaecati sint eos voluptate corrupti, 
+            deserunt officia quis consectetur, non quidem! Praesentium repudiandae placeat animi.
+        </p></div>
+
+        <div class="dua">
+            yyyy2
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perspiciatis nostrum, 
+            id fugiat ut ex obcaecati sint eos voluptate corrupti, 
+            deserunt officia quis consectetur, non quidem! Praesentium repudiandae placeat animi.
+        </div>
+
+        <div class="tiga">
+            hafho3
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perspiciatis nostrum, 
+            id fugiat ut ex obcaecati sint eos voluptate corrupti, 
+            deserunt officia quis consectetur, non quidem! Praesentium repudiandae placeat animi.
+        </div>
+
+        <!-- <div class="empat">
+            ajbgfja4
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perspiciatis nostrum, 
+            id fugiat ut ex obcaecati sint eos voluptate corrupti, 
+            deserunt officia quis consectetur, non quidem! Praesentium repudiandae placeat animi.
+        </div> -->
+        <div class="lima">
+            haiii
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perspiciatis nostrum, 
+            id fugiat ut ex obcaecati sint eos voluptate corrupti, 
+            deserunt officia quis consectetur, non quidem! Praesentium repudiandae placeat animi.
+        </div>
+
+        <div class="enam">
+            hhyhyhyh
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed perspiciatis nostrum, 
+            id fugiat ut ex obcaecati sint eos voluptate corrupti, 
+            deserunt officia quis consectetur, non quidem! Praesentium repudiandae placeat animi.
+        </div>
+    </div>
+</body>
+</html>
